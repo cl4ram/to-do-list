@@ -12,5 +12,5 @@ This is a project for Wes Boss's 'Beginner JavaScript' course.
 
 ## My process
 
-- Vanilla JS
+- Vanilla JS custom events
 
