@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #162055;
+  color: #DDF2FD;
+  font-family: "Arimo", sans-serif;
+}
+
+.form-container {
+  width: 70%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  border: solid 2px #79B4D9;
+  border-radius: 5px 0 0 5px;
+  background-color: #162055;
+  height: 2.8rem;
+  width: 70%;
+  color: #DDF2FD;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  border-right-width: 1px;
+
+}
+
+input[type="text"]:focus {
+  outline: solid 2px #79B4D9;
+}
+
+input[type="text"]::placeholder {
+  color: #79B4D9;
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+.submit {
+  border: solid 2px #79B4D9;
+  border-radius: 0 5px 5px 0;
+  background-color: #162055;
+  color: #DDF2FD;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: background-color .2s;
+  border-left-width: 1px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #005cc8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  font-size: 1.2rem;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto 1fr auto;
+  width: 90%;
+  padding: .5rem 0;
+  border-bottom: solid 1px #DDF2FD;
+}
+
+li input[type="checkbox"] {
+  width: 1rem;
+  margin-right: .5rem;
+}
+
+li input[type="checkbox"]:checked+span {
+  text-decoration: line-through;
+}
+
+li button {
+  background-color: #005cc8;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+  color: #DDF2FD;
+  height: 1.3rem;
+}
